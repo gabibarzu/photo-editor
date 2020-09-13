@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import "src/assets/scss/variables.scss";
+@import "src/assets/scss/customTheme.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Kufam", cursive;
+  background-color: $contrast-primary-color;
+}
+
+.mat-button,
+.mat-raised-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button,
+.mat-fab,
+.mat-mini-fab {
+  font-family: "Kufam", cursive !important;
+}

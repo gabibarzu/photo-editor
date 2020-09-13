@@ -6,10 +6,14 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AngularMaterialModule } from "./shared/angular-material/angular-material.module";
 
 import { AppComponent } from './app.component';
+import { NavigationComponent } from './shared/navigation/navigation.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavigationComponent,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,

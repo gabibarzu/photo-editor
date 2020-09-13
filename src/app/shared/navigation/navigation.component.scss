@@ -1,0 +1,27 @@
+@import "src/assets/scss/variables.scss";
+
+.mat-toolbar {
+  font-family: "Kufam", cursive;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
+  .logo-container {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    .logo {
+      margin-top: -10px;
+    }
+
+    .logo-text {
+      color: $pale-white;
+      font-weight: 700;
+      margin-left: 5px;
+    }
+  }
+}

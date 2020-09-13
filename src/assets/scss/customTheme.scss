@@ -1,0 +1,15 @@
+@import "src/assets/scss/variables.scss";
+
+@import "~@angular/material/theming";
+@include mat-core();
+
+$primary: mat-palette($my-mat-gray, 200);
+$accent: mat-palette($my-mat-pale-white, 200);
+
+$theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+
+mat-option {
+  transition: 0.3s ease;
+}
