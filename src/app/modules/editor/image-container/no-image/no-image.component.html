@@ -1,4 +1,5 @@
 <h1>Please upload an image to start editing</h1>
+<h2 class="text-danger" *ngIf="error">{{error}}</h2>
 <p>Supported types: JPG, JPEG, PNG</p>
 
 <input type="file" accept="image/*" #file (change)="selectFile($event)">

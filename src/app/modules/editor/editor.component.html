@@ -6,7 +6,8 @@
         <div class="editor-container">
             <div class="edit-container">
                 <div class="image-container">
-                    <app-image-container></app-image-container>
+                    <app-image-container [isUploaded]="isUploaded" (onUploadImage)="uploadImage($event)">
+                    </app-image-container>
                 </div>
                 <div class="modifications-container" *ngIf="isUploaded">
                     <app-modifications-container></app-modifications-container>

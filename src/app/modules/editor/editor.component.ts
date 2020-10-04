@@ -1,17 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-editor',
   templateUrl: './editor.component.html',
   styleUrls: ['./editor.component.scss']
 })
-export class EditorComponent implements OnInit {
+export class EditorComponent {
 
   isUploaded: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  uploadImage(event) {
+    this.isUploaded = event;
   }
-
 }
