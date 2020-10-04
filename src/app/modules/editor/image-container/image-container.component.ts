@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./image-container.component.scss']
 })
 export class ImageContainerComponent implements OnInit {
+  isUploaded: boolean = false;
 
   constructor() { }
 

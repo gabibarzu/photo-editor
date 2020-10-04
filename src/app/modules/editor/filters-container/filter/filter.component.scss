@@ -3,15 +3,20 @@
 .filter {
   display: flex;
   align-items: center;
-  padding: 15px 0 15px 15px;
+  font-size: 20px;
+  padding: 10px;
   @include transition;
 
   &:hover {
     cursor: pointer;
-    background-color: $contrast-primary-color;
+    background-color: $gray;
   }
 
   app-custom-icon {
-    padding-right: 5px;
+    padding-right: 10px;
+  }
+
+  span {
+    padding: 15px 0;
   }
 }

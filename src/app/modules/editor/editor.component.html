@@ -1,8 +1,20 @@
-<mat-sidenav-container class="container" autosize>
-    <mat-sidenav mode="side" opened>
+<mat-sidenav-container class="page-container" autosize>
+    <mat-sidenav mode="side" opened [disableClose]="true">
         <app-filters-container></app-filters-container>
     </mat-sidenav>
     <mat-sidenav-content>
-        <app-image-container></app-image-container>
+        <div class="editor-container">
+            <div class="edit-container">
+                <div class="image-container">
+                    <app-image-container></app-image-container>
+                </div>
+                <div class="modifications-container" *ngIf="isUploaded">
+                    <app-modifications-container></app-modifications-container>
+                </div>
+            </div>
+            <div class="options-container" *ngIf="isUploaded">
+                <app-options-container></app-options-container>
+            </div>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

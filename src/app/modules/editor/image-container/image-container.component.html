@@ -1,2 +1,3 @@
-<p>image-container works!</p>
-<!-- <app-custom-icon item="picture"></app-custom-icon> -->
+<ng-container *ngIf="!isUploaded">
+    <app-no-image></app-no-image>
+</ng-container>

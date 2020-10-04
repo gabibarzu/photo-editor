@@ -1,0 +1,7 @@
+<h1>Please upload an image to start editing</h1>
+<p>Supported types: JPG, JPEG, PNG</p>
+
+<input type="file" accept="image/*" #file (change)="selectFile($event)">
+<button (click)="file.click()" mat-flat-button class="button-bigger button-accent">
+    <app-icon item="backup"></app-icon>Upload
+</button>
