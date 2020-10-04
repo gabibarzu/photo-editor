@@ -6,14 +6,32 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AngularMaterialModule } from "./shared/angular-material/angular-material.module";
 
 import { AppComponent } from './app.component';
+
 import { NavigationComponent } from './shared/navigation/navigation.component';
-import { HomepageComponent } from './homepage/homepage.component';
+import { IconComponent } from './shared/icon/icon.component';
+import { CustomIconComponent } from './shared/custom-icon/custom-icon.component';
+
+import { HomepageComponent } from './modules/homepage/homepage.component';
+
+import { EditorComponent } from './modules/editor/editor.component';
+import { FiltersContainerComponent } from './modules/editor/filters-container/filters-container.component';
+import { ImageContainerComponent } from './modules/editor/image-container/image-container.component';
+import { ModificationsContainerComponent } from './modules/editor/modifications-container/modifications-container.component';
+import { FilterComponent } from './modules/editor/filters-container/filter/filter.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
+    IconComponent,
+    CustomIconComponent,
     HomepageComponent,
+    EditorComponent,
+    FiltersContainerComponent,
+    ImageContainerComponent,
+    ModificationsContainerComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

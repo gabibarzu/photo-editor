@@ -1,0 +1,17 @@
+@import "src/assets/scss/variables.scss";
+
+.filter {
+  display: flex;
+  align-items: center;
+  padding: 15px 0 15px 15px;
+  @include transition;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $contrast-primary-color;
+  }
+
+  app-custom-icon {
+    padding-right: 5px;
+  }
+}
