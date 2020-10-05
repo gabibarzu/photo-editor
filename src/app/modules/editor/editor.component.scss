@@ -21,14 +21,14 @@ mat-sidenav.mat-closed.md-locked-open-add-active {
   min-height: 100%;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   .edit-container {
     margin-top: 64px;
-    flex: 1;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 5;
 
     .image-container {
       display: flex;
@@ -36,18 +36,20 @@ mat-sidenav.mat-closed.md-locked-open-add-active {
       justify-content: center;
       text-align: center;
       flex: 5;
+      flex-direction: row;
     }
 
-    .modifications-container {
-      flex: 1;
+    .options-container {
       background-color: $white;
-      border-left: 1px solid $border-color;
+      border-top: 1px solid $border-color;
+      padding: 20px;
     }
   }
 
-  .options-container {
+  .modifications-container {
+    margin-top: 64px;
+    flex: 1;
     background-color: $white;
-    border-top: 1px solid $border-color;
-    padding: 20px;
+    border-left: 1px solid $border-color;
   }
 }

@@ -9,12 +9,12 @@
                     <app-image-container [isUploaded]="isUploaded" (onUploadImage)="uploadImage($event)">
                     </app-image-container>
                 </div>
-                <div class="modifications-container" *ngIf="isUploaded">
-                    <app-modifications-container></app-modifications-container>
+                <div class="options-container" *ngIf="isUploaded">
+                    <app-options-container></app-options-container>
                 </div>
             </div>
-            <div class="options-container" *ngIf="isUploaded">
-                <app-options-container></app-options-container>
+            <div class="modifications-container" *ngIf="isUploaded">
+                <app-modifications-container></app-modifications-container>
             </div>
         </div>
     </mat-sidenav-content>
