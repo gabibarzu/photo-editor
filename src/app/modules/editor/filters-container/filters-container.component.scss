@@ -1,3 +1,16 @@
+@import "src/assets/scss/customTheme.scss";
+
 .filter-container {
   margin-top: 64px;
+
+  &.disabled {
+    filter: grayscale(1);
+
+    ::ng-deep {
+      .filter:hover {
+        cursor: default;
+        background-color: $white;
+      }
+    }
+  }
 }

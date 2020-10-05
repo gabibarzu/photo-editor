@@ -2,8 +2,8 @@
     <app-no-image [error]="errorMessage" (onSelectFile)="selectFile($event)"></app-no-image>
 </ng-container>
 <ng-template #image>
-    <div [innerHtml]="errorMessage" *ngIf="errorMessage"></div>
     <div class="image-container">
         <img [src]="url" *ngIf="url">
+        <!-- <img src="./assets/images/filters/picture.svg" /> -->
     </div>
 </ng-template>

@@ -1,6 +1,6 @@
 <mat-sidenav-container class="page-container" autosize>
     <mat-sidenav mode="side" opened [disableClose]="true">
-        <app-filters-container></app-filters-container>
+        <app-filters-container [disabled]="!isUploaded"></app-filters-container>
     </mat-sidenav>
     <mat-sidenav-content>
         <div class="editor-container">
