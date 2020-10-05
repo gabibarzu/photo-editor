@@ -1,0 +1,17 @@
+@import "src/assets/scss/customTheme.scss";
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mat-slider-horizontal {
+    width: 500px;
+  }
+}
+
+::ng-deep {
+  .mat-primary .mat-slider-thumb-label-text {
+    color: $white !important;
+  }
+}
