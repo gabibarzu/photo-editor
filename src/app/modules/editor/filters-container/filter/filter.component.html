@@ -1,4 +1,4 @@
-<div class="filter">
-    <app-custom-icon item="{{name}}" size=50></app-custom-icon>
-    <span>{{name | titlecase}}</span>
+<div class="filter" [ngClass]="{'selected' : selected}" (click)="selectFilter()">
+    <app-custom-icon item="{{filter.property}}" size=50></app-custom-icon>
+    <span>{{filter.name}}</span>
 </div>

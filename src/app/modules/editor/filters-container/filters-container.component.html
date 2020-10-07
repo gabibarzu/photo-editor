@@ -1,11 +1,5 @@
-<div class="filter-container" [ngClass]="{'disabled' : disabled == true}">
-    <app-filter name="blur"></app-filter>
-    <app-filter name="brightness"></app-filter>
-    <app-filter name="contrast"></app-filter>
-    <app-filter name="grayscale"></app-filter>
-    <app-filter name="hue-rotate"></app-filter>
-    <app-filter name="invert"></app-filter>
-    <app-filter name="opacity"></app-filter>
-    <app-filter name="saturate"></app-filter>
-    <app-filter name="sepia"></app-filter>
+<div class="filter-container" [ngClass]="{'disabled' : disabled}">
+    <app-filter *ngFor="let filter of filters" [filter]="filter" [selected]="isSelected(filter)"
+        (onClick)="selectFilter($event)">
+    </app-filter>
 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Filter } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-editor',
@@ -8,8 +9,13 @@ import { Component } from '@angular/core';
 export class EditorComponent {
 
   isUploaded: boolean = false;
+  selectedFilter: Filter;
 
-  uploadImage(event) {
+  uploadImage(event: boolean) {
     this.isUploaded = event;
+  }
+
+  selectFilter(filter: Filter) {
+    this.selectedFilter = filter;
   }
 }

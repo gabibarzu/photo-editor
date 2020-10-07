@@ -1,4 +1,10 @@
 <div class="slider-container">
-    <mat-slider thumbLabel [displayWith]="formatLabel" min="1" max="100000" color="primary">
-    </mat-slider>
+    <ng-container *ngIf="filter">
+        <span class="value-label">{{filter.range.min}}{{filter.unit}}</span>
+        <mat-slider thumbLabel [displayWith]="formatLabel" [value]="filter.value" [step]="filter.range.step"
+            [min]="filter.range.min" [max]="filter.range.max" color="primary">
+        </mat-slider>
+        <span class="value-label">{{filter.range.max}}{{filter.unit}}</span>
+    </ng-container>
+    <span *ngIf="!filter">Please select a filter</span>
 </div>
