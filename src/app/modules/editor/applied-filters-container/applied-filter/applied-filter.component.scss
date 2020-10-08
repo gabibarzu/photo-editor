@@ -3,25 +3,22 @@
 .filter {
   display: flex;
   align-items: center;
+  padding-left: 10px;
+  height: 50px;
   font-size: 20px;
-  padding: 10px;
   @include transition;
 
   &:hover {
     cursor: pointer;
     background-color: $pale-gray;
+
+    .delete-icon {
+      color: $red;
+    }
   }
 
-  app-custom-icon {
-    padding-right: 10px;
-  }
-
-  span {
-    padding: 15px 0;
-  }
-
-  &.selected {
-    color: $contrast-primary-color;
-    background-color: $primary-color;
+  app-icon {
+    @include transition;
+    margin-right: 5px;
   }
 }

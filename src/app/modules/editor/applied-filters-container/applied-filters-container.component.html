@@ -1,1 +1,3 @@
 <p class="title">Applied filters</p>
+<app-applied-filter *ngFor="let filter of filters" [filter]="filter" (onRemoveFilter)="removeFilter($event)">
+</app-applied-filter>

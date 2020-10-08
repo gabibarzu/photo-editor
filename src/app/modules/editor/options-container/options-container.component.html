@@ -2,7 +2,7 @@
     <ng-container *ngIf="filter">
         <span class="value-label">{{filter.range.min}}{{filter.unit}}</span>
         <mat-slider thumbLabel [displayWith]="formatLabel" [value]="filter.value" [step]="filter.range.step"
-            [min]="filter.range.min" [max]="filter.range.max" color="primary">
+            [min]="filter.range.min" [max]="filter.range.max" color="primary" (change)="changeValue($event)">
         </mat-slider>
         <span class="value-label">{{filter.range.max}}{{filter.unit}}</span>
     </ng-container>

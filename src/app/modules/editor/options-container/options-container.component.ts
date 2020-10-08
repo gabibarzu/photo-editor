@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Filter } from 'src/app/shared/models';
 
 @Component({
@@ -8,9 +8,13 @@ import { Filter } from 'src/app/shared/models';
 })
 export class OptionsContainerComponent {
   @Input() filter: any;
+  @Output() onValueChange: EventEmitter<number> = new EventEmitter();
 
   formatLabel(value: number) {
     return value;
   }
 
+  changeValue(toggle: any) {
+    this.onValueChange.emit(toggle.value);
+  }
 }

@@ -20,6 +20,7 @@ import { ImageContainerComponent } from './modules/editor/image-container/image-
 import { AppliedFiltersContainerComponent } from './modules/editor/applied-filters-container/applied-filters-container.component';
 import { OptionsContainerComponent } from './modules/editor/options-container/options-container.component';
 import { NoImageComponent } from './modules/editor/image-container/no-image/no-image.component';
+import { AppliedFilterComponent } from './modules/editor/applied-filters-container/applied-filter/applied-filter.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { NoImageComponent } from './modules/editor/image-container/no-image/no-i
     ImageContainerComponent,
     AppliedFiltersContainerComponent,
     OptionsContainerComponent,
-    NoImageComponent
+    NoImageComponent,
+    AppliedFilterComponent
   ],
   imports: [
     BrowserModule,

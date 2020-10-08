@@ -10,11 +10,12 @@
                     </app-image-container>
                 </div>
                 <div class="options-container" *ngIf="isUploaded">
-                    <app-options-container [filter]="selectedFilter"></app-options-container>
+                    <app-options-container [filter]="selectedFilter" (onValueChange)="changeValue($event)">
+                    </app-options-container>
                 </div>
             </div>
             <div class="applied-filters-container" *ngIf="isUploaded">
-                <app-applied-filters-container></app-applied-filters-container>
+                <app-applied-filters-container [filters]="filters"></app-applied-filters-container>
             </div>
         </div>
     </mat-sidenav-content>
